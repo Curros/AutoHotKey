@@ -18,12 +18,11 @@
 	SoundGet, mute, Microphone, MUTE, 4
 
 	If mute = On
-		soundfile = %A_WinDir%\Media\Windows Logoff Sound.wav
+		soundfile = %A_WinDir%\Media\notify.wav
 	Else
-		soundfile = %A_WinDir%\Media\Windows Logon Sound.wav
+		soundfile = %A_WinDir%\Media\notify.wav
 
 	SoundPlay, %soundfile%
 	; TrayTip, ToggleMic, %soundfile%, 3
 	TrayTip, ToggleMic, Microphone mute is %mute%, 3
 return
-
